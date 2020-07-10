@@ -1,0 +1,1 @@
+"use strict";$(".addToCart").click(function(){$.get("./interface/addwq.php",{id:$(".id span").text(),img:$("img").attr("src"),price:$(".price1 span").text(),name:$("h3").text()},function(t){var e=JSON.parse(t);console.log(e),1==e.code&&(location.href="./cart.html")})});
